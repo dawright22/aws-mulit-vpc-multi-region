@@ -7,7 +7,7 @@ terraform {
 }
 
 module "region-1" {
-  source = "./VPC_region-1"
+  source = "./region-1"
   region = "ap-southeast-2"
   # cidr_c = "10.2.0.0/16" #CIDR block used for VPC_C
 }
