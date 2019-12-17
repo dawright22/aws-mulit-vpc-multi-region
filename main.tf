@@ -5,7 +5,6 @@
 terraform {
   required_version = ">= 0.12"
 }
-verion = "1.0.0"
 
 module "region-1" {
   source = "./region-1"
