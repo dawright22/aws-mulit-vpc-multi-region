@@ -7,14 +7,14 @@ terraform {
 }
 
 module "region-1" {
-  version = 1.0.0
+  version = "1.0.0"
   source = "./region-1"
   region = "ap-southeast-2"
   # cidr_c = "10.2.0.0/16" #CIDR block used for VPC_C
 }
 
 module "region-2" {
-  version = 1.0.0
+  version = "1.0.0"
   source               = "./region-2"
   region               = "ap-southeast-1" #define the region for the secondary VPC
   aws_region-1         = "ap-southeast-2" #define the primary peering region
